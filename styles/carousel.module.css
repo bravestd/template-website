@@ -1,0 +1,24 @@
+.viewport:global(.is-draggable) {
+  /* cursor: move; */
+  cursor: grab;
+  overflow-x: hidden;
+}
+
+.viewport:global(.is-gradding) {
+  cursor: grabbing;
+}
+
+.container {
+  user-select: none;
+}
+
+.slide {
+  flex: 0 0 auto;
+  max-width: min(70%, 620px);
+  opacity: 0.4;
+  transition: opacity 0.4s;
+}
+
+.slide:global(.active) {
+  opacity: 1;
+}
